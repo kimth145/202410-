@@ -1,0 +1,87 @@
+#header {
+  background-color: yellow;
+  height: 10%;
+  text-align: center;
+}
+
+#side {
+  background-color: lightblue;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 20%; */
+  flex-grow: 2;
+}
+
+#main {
+  background-color: plum;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 70%; */
+  flex-grow: 7;
+}
+
+#aside {
+  background-color: greenyellow;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 10%; */
+  flex-grow: 1;
+}
+
+#footer {
+  background-color: yellow;
+  height: 10%;
+  text-align: center;
+}
+
+#wrapper {
+  display: flex;
+  height: 80%;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#grid_wrapper {
+  display: grid;
+  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-columns: 10vw 80vw 10vw;
+  grid-template-areas:
+    "areaA areaA areaA"
+    "areaB areaC areaD"
+    "areaE areaE areaE";
+}
+
+#grid_header {
+  grid-area: areaA;
+  background-color: yellow;
+}
+
+#grid_side {
+  grid-area: areaB;
+  background-color: red;
+}
+
+#grid_main {
+  grid-area: areaC;
+  background-color: orange;
+}
+
+#grid_aside {
+  grid-area: areaD;
+  background-color: greenyellow;
+}
+
+#grid_footer {
+  grid-area: areaE;
+  background-color: yellow;
+}

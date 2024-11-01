@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Intern</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <script>
+    function handleClick() {
+      alert("Clicked!!!");
+    }
+  </script>
+
+  <body>
+    <div id="grid_wrapper">
+      <div id="grid_header">HEADER</div>
+      <div id="grid_side">SIDE MENU</div>
+      <div id="grid_main">
+        MAIN
+        <div
+          style="
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: red;
+            width: 100px;
+            height: 100px;
+          "
+        >
+          <p style="position: relative">
+            <img src="https://picsum.photos/id/3/200/200" />
+          </p>
+        </div>
+        <button onclick="handleClick();">Click!!!</button>
+      </div>
+      <div id="grid_aside">ASIDE</div>
+      <div id="grid_footer">FOOTER</div>
+    </div>
+  </body>
+</html>
